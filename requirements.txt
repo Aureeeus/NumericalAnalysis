@@ -1,0 +1,5 @@
+# Graphing library
+matplotlib==3.10.8
+
+# Numerical computing library
+numpy==2.4.1
