@@ -35,4 +35,5 @@ def regula_falsi(f, a, b, tol):
     iteration += 1
 
 
-regula_falsi(f, 1, 2, 0.001)
+if __name__ == "__main__":
+  regula_falsi(f, 1, 2, 0.001)

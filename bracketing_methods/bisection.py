@@ -36,4 +36,5 @@ def bisection(f: function, a: int | float, b: int | float, tol: float = 0.001) -
     iteration += 1
 
 
-bisection(f, 1, 2, 0.001)
+if __name__ == "__main__":
+  bisection(f, 1, 2, 0.001)
