@@ -11,8 +11,8 @@ def bisection(f: function, a: int | float, b: int | float, tol: float = 0.001) -
   iteration = 1
 
   print(
-      f"| Iteration | {'a':^15} | {'b':^15} | {'mid':^15} | {'f(mid)':^15} | abs error")
-  print("-" * 103)
+      f" Iteration | {'a':^9s} | {'b':^9s} | {'mid':^9s} | {'f(mid)':^9s} | abs error")
+  print("-" * 70)
 
   while True:
     mid = (a + b) / 2
@@ -20,10 +20,10 @@ def bisection(f: function, a: int | float, b: int | float, tol: float = 0.001) -
     error = abs(mid - prev_mid) if prev_mid is not None else None
 
     print(
-        f"| {iteration:^9d} | {a:^15.5f} | {b:^15.5f} | {mid:^15.5f} | {f_mid:^15.5f} | {error}")
+        f" {iteration:^9d} | {a:^9.5f} | {b:^9.5f} | {mid:^9.5f} | {f_mid:^9.5f} | {'None' if error is None else f'{error:.5f}'}")
 
     if error is not None and error < tol:
-      print("-" * 103)
+      print("-" * 70)
       print(f"Approximated root: ", mid,)
       break
 
@@ -36,5 +36,4 @@ def bisection(f: function, a: int | float, b: int | float, tol: float = 0.001) -
     iteration += 1
 
 
-if __name__ == "__main__":
-  bisection(f, 1, 2, 1)
+bisection(f, 1, 2, 0.001)
