@@ -1,9 +1,4 @@
-
-def f(x: int | float) -> int | float:
-  return 2*x**3 - 2*x - 5
-
-
-def bisection(f: function, a: int | float, b: int | float, tol: float = 0.001) -> None:
+def bisection(f, a, b, tol=0.001):
   if f(a) * f(b) >= 0:
     raise ValueError("f(a) and f(b) must have different signs.")
 
@@ -34,7 +29,3 @@ def bisection(f: function, a: int | float, b: int | float, tol: float = 0.001) -
 
     prev_mid = mid
     iteration += 1
-
-
-if __name__ == "__main__":
-  bisection(f, 1, 2, 0.001)
