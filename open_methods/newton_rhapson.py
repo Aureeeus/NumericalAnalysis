@@ -2,7 +2,7 @@ def newton_raphson(f, f_prime, x0, tol=0.0001):
   x_list = [x0]
   iteration = 1
 
-  print(f" Iteration | {'x_n':^9s} | {'x_n+1':^9s} | {'Difference'}")
+  print(f" Iteration | {'x(n)':^9s} | {'x(n+1)':^9s} | {'Difference'}")
   print("-" * 50)
 
   while True:

@@ -2,7 +2,7 @@ def fixed_point(g, x0, tol=0.001):
   x_list = [x0]
   iteration = 1
 
-  print(f" Iteration | {'x_n':^9s} | {'x_n+1':^9s} | {'Difference'}")
+  print(f" Iteration | {'x(n)':^9s} | {'x(n+1)':^9s} | {'Difference'}")
   print("-" * 50)
 
   while True:
