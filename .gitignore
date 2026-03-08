@@ -1,5 +1,21 @@
-# Virtual environment
-.venv/
-
-# Python bytecode
+# Python compiled files
 __pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and IDE
+.vscode/
+
+# Meta files
+.agents/
+
+# Type checking / Linters
+.pyre/
+
+# OS generated files
+.DS_Store
+Thumbs.db
